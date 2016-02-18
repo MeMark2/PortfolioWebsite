@@ -1,7 +1,9 @@
 .navBarContainer {
-  position: fixed;
+  position: absolute;
   width: 100%;
   min-width: 430px;
+  transition-property: top;
+  transition-duration: 0.5s;
 
   .navBar {
     background-color: rgb(245, 245, 245);
@@ -66,4 +68,5 @@
 // This class exists to offset anything that would otherwise fall underneath the navBar
 .navOffset {
   height: 70px;
+  min-width: 430px;
 }
