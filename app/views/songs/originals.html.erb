@@ -6,4 +6,69 @@
 <%= render "shared/nav_bar" %>
 
 
-hey
+<div class="contentArea row columns medium-offset-1 medium-10 small-12">
+  <!-- Description Card -->
+  <div class="card description">
+    <h5>Original Works</h5>
+    <p>
+      Having great interest in music from a young age, I have had the opportunity to write various pieces of my own. Some pieces were improvised and recorded in an afternoon, others took weeks of careful arrangemenet. Most of my original pieces are available at my <a href="https://soundcloud.com/markoftwo" target="_blank">SoundCloud</a> page.
+      <br><br>
+      If you're interested in my recording and arranging process, or if you would just like to listen to more improvised pieces, visit my blog <a href="http://markoftwonotes.tumblr.com/" target="_blank">here</a>.
+    </p>
+  </div>
+
+  <!-- Sample Music Cards -->
+  <!-- Will use a database and a loop to generate the cards in a future update -->
+  <% videoWidth = 320 %>
+  <% videoHeight = 180 %>
+  <div class="card">
+    <h5>Tainted Skies</h5>
+    <p>
+      Originally intended as the main theme for a small game being built by a group of volunteers, this piece conveys the damage that war leaves on the land and its people. A rare attempt on my part to compose a piece with multiple instruments.
+    </p>
+    <div class="videoContainer">
+      <iframe width="<%= videoWidth %>" height="<%= videoHeight %>" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/54955801&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>Ramblings of a Madman</h5>
+    <p>
+      Improvised, recorded, touched up and uploaded in the span of 3 hours, this piece is highly experimental and wacky in all the best ways.
+    </p>
+    <div class="videoContainer">
+      <iframe width="<%= videoWidth %>" height="<%= videoHeight %>" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/215271981&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>Fun</h5>
+    <p>
+      Stepping out of my comfort zone and trying to create something using purely synthetic instruments, this piece was an exciting experiment to take on. Written with no other goal than to enjoy myself, the name was inevitable.
+    </p>
+    <div class="videoContainer">
+      <iframe width="<%= videoWidth %>" height="<%= videoHeight %>" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/171117136&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>Princess Kalia</h5>
+    <p>
+      One of my earliest original pieces, this song is a fantastical tale of romance, politics and death. Think Romeo and Juliet but with more dragons.
+    </p>
+    <div class="videoContainer">
+      <iframe width="<%= videoWidth %>" height="<%= videoHeight %>" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/148138551&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>Some Improv</h5>
+    <p>
+      This is a recently recorded and uploaded improvisation session.
+    </p>
+    <div class="videoContainer">
+      <!-- Custom height for the playlist version of the SoundCloud player -->
+      <iframe width="<%= videoWidth %>" height="295" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/190930299&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false"></iframe>
+    </div>
+  </div>
+</div>
