@@ -1,0 +1,52 @@
+<% content_for :title do %>
+  JR | Covers
+<% end %>
+
+<!-- Render the fixed navigation bar -->
+<%= render "shared/nav_bar" %>
+
+
+<div class="contentArea row columns medium-offset-1 medium-10 small-12">
+  <!-- Description Card -->
+  <div class="card description">
+    <h5>Zelda Covers</h5>
+    <p>
+      Started mainly as a fun reimagining of a classic Legend of Zelda tune,
+      the <a href="https://www.youtube.com/user/lMeMark42l" target="_blank">Mark of Two</a> channel
+      has grown over the years to include a variety of reimagined piano covers of
+      varying complexity and style.
+      <br><br>
+      For more information on my arrangement and recording process, ongoing progress on covers, and future plans, visit my blog <a href="http://markoftwonotes.tumblr.com/" target="_blank">here</a>.
+    </p>
+  </div>
+
+  <!-- Sample Music Cards -->
+  <!-- Will use a database and a loop to generate the cards in a future update -->
+  <% videoWidth = 320 %>
+  <% videoHeight = 180 %>
+  <div class="card">
+    <h5>Stargazing</h5>
+    <p>
+      My latest cover. Based on the Astral Observatory theme played in The Legend of Zelda: Majora's Mask.
+      In this piece, I take a repetitive background theme and attempt to convey the highs and lows of Link's
+      journey through time.
+    </p>
+    <div class="videoContainer">
+      <iframe width="<%= videoWidth %>" height="<%= videoHeight %>" src="https://www.youtube.com/embed/jW4DwEN2CuU"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <div class="card">
+    <h5>The Storm's Calling</h5>
+    <p>
+      The one that started it all. This is a cover of the Song of Storms from The Legend of Zelda: Ocarina of
+      Time. It plays more like just a series of variations on the memorable theme, but with clear musical
+      progression.
+    </p>
+    <div class="videoContainer">
+      <iframe width="<%= videoWidth %>" height="<%= videoHeight %>" src="https://www.youtube.com/embed/P5GncKaNM5M"
+        frameborder="0" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>

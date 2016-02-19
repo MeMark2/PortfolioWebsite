@@ -1,3 +1,5 @@
+@import 'shared/variables';
+
 $navBarHeight: 70px;
 $navBarOffset: 10px;
 $navTitleHeight: 60px;
@@ -9,11 +11,12 @@ $navTitleHeight: 60px;
   transition-property: top;
   transition-duration: 0.5s;
   margin-top: $navBarOffset;
+  z-index: 100;
 
   .navBar {
-    background-color: rgb(245, 245, 245);
+    background-color: $lightGray;
     border-radius: 10px;
-    box-shadow: 5px 5px 15px #888888;
+    box-shadow: 5px 5px 15px $lightGrayShadow;
     height: $navBarHeight;
 
     .navTitleContainer {
@@ -23,15 +26,18 @@ $navTitleHeight: 60px;
       .navTitle {
         line-height: $navTitleHeight;
         text-align: center;
-        background-color: #AFFFF0;
+        background-color: $lightTeal;
         border-radius: $navTitleHeight/2;
         height: $navTitleHeight;
         width: $navTitleHeight;
         margin: 5px auto;
-        box-shadow: 3px 3px 15px #888888;
+        box-shadow: 3px 3px 15px $lightGrayShadow;
 
         &:hover {
           cursor: pointer;
+          color: $strongBlue;
+          transition-property: color;
+          transition-duration: 0.3s;
         }
 
         .navTitleText {
@@ -57,11 +63,15 @@ $navTitleHeight: 60px;
           //color: black;
           border-radius: 5px;
           // &::after { border-color: black transparent; }
-          &:hover { background-color: #AFFFF0; }
+          &:hover {
+            color: $strongBlue;
+            transition-property: color;
+            transition-duration: 0.3s;
+          }
         }
 
         .is-dropdown-submenu {
-          background-color: rgb(245, 245, 245);
+          background-color: white;
           border-radius: 5px;
         }
       }

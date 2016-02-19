@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'welcome' => 'welcome#index'
-
-  get 'about' => 'welcome#about'
-
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
@@ -11,6 +7,13 @@ Rails.application.routes.draw do
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
+
+  get 'welcome' => 'welcome#index'
+  get 'about' => 'welcome#about'
+
+  # Stick to regular routes for the time being. Proper resource routes shall be used in the future.
+  get 'songs/covers' => 'songs#covers'
+  get 'songs/originals' => 'songs#originals'
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

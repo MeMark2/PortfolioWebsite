@@ -1,5 +1,7 @@
-$minBodyWidth: 520px;
+@import 'shared/variables';
+
 
 body {
   min-width: $minBodyWidth;
+  background-color: $lightGray;
 }

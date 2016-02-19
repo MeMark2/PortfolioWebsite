@@ -1,0 +1,36 @@
+@import 'shared/variables';
+
+.contentArea {
+  margin-top: 10px;
+  padding: 0;
+
+  .card {
+    margin: 5px;
+    vertical-align: top;
+    text-align: center;
+    display: inline-block;
+    height: 410px;
+    width: 345px;
+    background-color: $primaryColor;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px $lightGrayShadow;
+    position: relative;
+
+    &.description {
+      color: $primaryColor;
+      background-color: $lightGray;
+
+      a {
+        color: $primaryContrast;
+        &:hover { color: $deepContrast; }
+      }
+    }
+
+    .videoContainer {
+      position: absolute;
+      bottom: 5px;
+    }
+  }
+}
