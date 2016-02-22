@@ -1,1 +1,50 @@
 @import 'shared/variables';
+
+.contentArea .columns {
+  padding: 0;
+
+  .descriptionCard {
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    color: $primaryColor;
+    background-color: $lightGray;
+    box-shadow: 5px 5px 10px $lightGrayShadow;
+
+    img {
+      border-radius: 50%;
+      width: 94%;
+      margin: 3%;
+      border: solid 5px $lightTeal;
+    }
+
+    a {
+      color: $primaryContrast;
+      &:hover {
+        color: $deepContrast;
+      }
+    }
+  }
+
+  .contentCard {
+    margin: 5px;
+    border-radius: 5px;
+    background-color: $primaryColor;
+    box-shadow: 5px 5px 10px $lightGrayShadow;
+
+    .division {
+      padding: 10px;
+      text-align: center;
+
+      .bubble {
+        display: inline-block;
+        background-color: $lightGray;
+        color: $primaryColor;
+        padding: 10px;
+        border-radius: 10px;
+
+        h4, p { margin: 0; }
+      }
+    }
+  }
+}
