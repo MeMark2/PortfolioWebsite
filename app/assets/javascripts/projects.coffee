@@ -24,11 +24,20 @@ Params:
     expandable.addClass "expanded"
 
 
-@toggleIcon = (id, icon1, icon2) ->
+###
+Method name: toggleClasses
+Description:
+  This method searches for one of the two classes within an element and switches one for the other.
+Params:
+  id - the id used to identify the element to toggle classes on
+  class1 - one of the classes to switch
+  class2 - the other class to switch
+###
+@toggleClasses = (id, class1, class2) ->
   iconElement = $("##{id}")
-  if iconElement.hasClass icon1
-    iconElement.removeClass icon1
-    iconElement.addClass icon2
-  else if iconElement.hasClass icon2
-    iconElement.removeClass icon2
-    iconElement.addClass icon1
+  if iconElement.hasClass class1
+    iconElement.removeClass class1
+    iconElement.addClass class2
+  else if iconElement.hasClass class2
+    iconElement.removeClass class2
+    iconElement.addClass class1
