@@ -15,6 +15,10 @@ Rails.application.routes.draw do
   get 'songs/covers' => 'songs#covers'
   get 'songs/originals' => 'songs#originals'
 
+  get 'projects' => 'projects#index'
+  get 'projects/school' => 'projects#school'
+  get 'projects/personal' => 'projects#personal'
+
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase
 

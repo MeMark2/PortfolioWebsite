@@ -1,0 +1,71 @@
+<% content_for :title do %>
+  JR | Personal Projects
+<% end %>
+
+<!-- Render the fixed navigation bar -->
+<%= render "shared/nav_bar" %>
+
+<div class="contentArea row columns medium-offset-1 medium-10 small-12">
+
+  <!-- Expandable description -->
+  <div class="contentBox">
+    <div class="descriptionHeader"
+      onclick="toggleExpandable('description');toggleIcon('descriptionIcon', 'fa-angle-right', 'fa-angle-down');">
+      <span class="headerText">Personal Projects</span> <i id="descriptionIcon" class="fa fa-angle-down"></i>
+    </div>
+    <div id="description" class="expandable expanded">
+      <div class="content expandableContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Expandable content boxes -->
+  <div class="contentBox">
+    <div class="header"
+      onclick="toggleExpandable('project1');toggleIcon('project1Icon', 'fa-angle-right', 'fa-angle-down');">
+      <span class="headerText">Hex Grid RPG</span> <i id="project1Icon" class="fa fa-angle-right"></i>
+    </div>
+    <div id="project1" class="expandable">
+      <div class="content expandableContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentBox">
+    <div class="header"
+      onclick="toggleExpandable('project2');toggleIcon('project2Icon', 'fa-angle-right', 'fa-angle-down');">
+      <span class="headerText">Portfolio Website</span> <i id="project2Icon" class="fa fa-angle-right"></i>
+    </div>
+    <div id="project2" class="expandable">
+      <div class="content expandableContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentBox">
+    <div class="header"
+      onclick="toggleExpandable('project3');toggleIcon('project3Icon', 'fa-angle-right', 'fa-angle-down');">
+      <span class="headerText">Character AI Design Concepts</span> <i id="project3Icon" class="fa fa-angle-right"></i>
+    </div>
+    <div id="project3" class="expandable">
+      <div class="content expandableContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="contentBox">
+    <div class="header"
+      onclick="toggleExpandable('project4');toggleIcon('project4Icon', 'fa-angle-right', 'fa-angle-down');">
+      <span class="headerText">World Building</span> <i id="project4Icon" class="fa fa-angle-right"></i>
+    </div>
+    <div id="project4" class="expandable">
+      <div class="content expandableContent">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+  </div>
+</div>

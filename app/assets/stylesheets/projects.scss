@@ -1,0 +1,114 @@
+@import 'shared/variables';
+
+.contentArea {
+  .contentBox {
+    background-color: $primaryColor;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px $lightGrayShadow;
+    color: $primaryColor;
+    padding: 10px;
+    margin-bottom: 10px;
+
+    i {
+      height: 1.5em;
+      width: 1.5em;
+      font-weight: bold;
+      border: solid 2px black;
+      padding: 3px;
+      text-align: center;
+      border-radius: 50%;
+    }
+
+    .descriptionHeader {
+      background-color: $lightGray;
+      border-radius: 10px;
+      padding: 10px;
+
+      .headerText {
+        font-size: 1.3em;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        i {
+          background-color: $primaryColor;
+          color: $lightGray;
+        }
+      }
+
+      i {
+        border-color: $primaryColor;
+        color: $primaryColor;
+        background-color: $lightGray;
+        margin-left: 10px;
+      }
+    }
+
+    .header {
+      border-radius: 10px;
+      color: white;
+
+      .headerText {
+        font-size: 1.3em;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+        i {
+          background-color: white;
+          color: $primaryColor;
+        }
+      }
+
+      i {
+        border-color: white;
+        color: white;
+        background-color: $primaryColor;
+        margin-left: 10px;
+      }
+    }
+
+    .content {
+      background-color: $lightGray;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+    .division {
+      text-align: center;
+      margin-bottom: 10px;
+
+      &:last-child { margin-bottom: 0; }
+      .bubble {
+        display: inline-block;
+        background-color: $lightGray;
+        color: $primaryColor;
+        padding: 10px;
+        border-radius: 10px;
+        margin: 5px;
+
+        a {
+          color: $primaryContrast;
+          &:hover {
+            color: $deepContrast;
+          }
+        }
+
+        h4, p { margin: 0; }
+      }
+    }
+  }
+}
+
+
+.expandable {
+  height: 0px;
+  overflow-y: hidden;
+  &.expanded {
+    overflow-y: auto;
+    height: auto;
+  }
+}
