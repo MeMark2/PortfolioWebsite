@@ -4,4 +4,8 @@
 body {
   min-width: $minBodyWidth;
   background-color: $lightGray;
+
+  .contentArea {
+    margin-bottom: 30px;
+  }
 }
