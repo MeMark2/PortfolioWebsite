@@ -8,8 +8,8 @@ $navTitleHeight: 60px;
   position: absolute;
   width: 100%;
   min-width: 520px;
-  transition-property: top;
-  transition-duration: 0.5s;
+  @include transition-property(top);
+  @include transition-duration(0.5s);
   margin-top: $navBarOffset;
   z-index: 100;
 
@@ -36,8 +36,8 @@ $navTitleHeight: 60px;
         &:hover {
           cursor: pointer;
           color: $strongBlue;
-          transition-property: color;
-          transition-duration: 0.3s;
+          @include transition-property(color);
+          @include transition-duration(0.3s);
         }
 
         .navTitleText {
@@ -65,8 +65,8 @@ $navTitleHeight: 60px;
           // &::after { border-color: black transparent; }
           &:hover {
             color: $strongBlue;
-            transition-property: color;
-            transition-duration: 0.3s;
+            @include transition-property(color);
+            @include transition-duration(0.3s);
           }
         }
 
