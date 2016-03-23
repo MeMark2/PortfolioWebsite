@@ -32,6 +32,7 @@ $navTitleHeight: 60px;
         width: $navTitleHeight;
         margin: 5px auto;
         box-shadow: 3px 3px 15px $lightGrayShadow;
+        color: $primaryColor;
 
         &:hover {
           cursor: pointer;

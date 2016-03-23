@@ -21,7 +21,7 @@
       border-radius: 50%;
       width: 94%;
       margin: 3%;
-      border: solid 5px $lightTeal;
+      border: solid 7px $lightTeal;
     }
 
   }
@@ -41,9 +41,10 @@
       .bubble {
         display: inline-block;
         background-color: $lightGray;
-        color: $primaryColor;
+        color: $gray;
         padding: 10px;
         border-radius: 10px;
+        //border: solid 2px $teal;
 
         h4, p:last-child { margin: 0; }
       }
