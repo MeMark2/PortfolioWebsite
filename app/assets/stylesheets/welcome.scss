@@ -44,8 +44,8 @@
         color: $gray;
         padding: 10px;
         border-radius: 10px;
-        //border: solid 2px $teal;
 
+        h4 { color: $primaryColor; }
         h4, p:last-child { margin: 0; }
       }
     }
